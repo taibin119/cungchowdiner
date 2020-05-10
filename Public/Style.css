@@ -1,0 +1,179 @@
+
+body{ 
+	margin:0px;
+	/*background: grey;*/
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+}
+header{
+	/*background: grey;*/
+	position: fixed;
+	background-attachment: fixed;
+	z-index: 5;
+}
+
+header::after{
+	content: '';
+	display: table;
+	clear:both;
+}
+.logo{
+	float: top-left;
+	height:100px;
+	width:100px;
+	padding: 5px;
+}
+
+nav{
+	float:right;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li{
+	display:inline-block;
+	margin: 0 30px;
+	padding-top: 50px;
+
+	position:relative;
+}
+
+nav ul li a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+
+nav ul li a:hover{
+	color: #000;
+}
+
+nav a::after{
+	content:'';
+	display:block;
+	height:5px;
+	width:100%;
+	background-color:#444;
+
+
+	position:absolute;
+	width:0%;
+
+	transition: all ease-in-out 250ms;
+}
+
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+.header_container{
+	top: 0px;
+	height:110px;
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	background:white;
+}
+
+.wrapper{
+	margin:0 auto;
+	width: 1000px;
+	/*display:inline-block;*/
+	position: relative;
+	background: white;
+	opacity: 0.8;
+
+
+	left:50%;
+	margin-left: -530px;
+	margin-top: 130px;
+	width: 1000px;
+	top:0px; 
+	padding: 30px; 
+	color: black; 
+}
+
+#bg_container{
+	height: 900px; 
+	/*overflow:hidden;*/
+	/*background:grey;*/
+	background-attachment: fixed;
+	top: 0px;
+}
+
+#bg{
+	width:100%;
+}
+#bg_container{
+	position: fixed;
+	margin-top: 110px;
+	text-align:center;
+}
+#bg_container_left{
+	position: relative;
+	text-align:center;
+}
+
+
+.text-block{
+	position:absolute;
+	bottom:20px;
+	right:20px;
+	background-color:white;
+	opacity: 0.8;
+	color:white
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.content_home{
+	position: absolute; 
+	background:white;
+	opacity: 0.7;
+	/*display: inline-block;*/
+
+
+	left:50%;
+	margin-left: -280px;
+	margin-top: 50px;
+	width: 500px;
+	top:0px; 
+	padding: 30px; 
+	color: black; 
+	/*display:flex;*/
+
+	/*margin-left:50%;*/
+	/*margin-top:25%;*/
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1px;
+}
+
+td{
+    border-bottom: 1px dotted;
+    vertical-align: bottom;
+    padding: 1px;
+}
+
+td.price{
+    text-align: right;
+}
+
+td > span{
+    background-color: white;
+    position: relative;
+    bottom: -5px;}
+@use postcss-nested;
+
+* {
+  box-sizing: border-box;
+}
+
+
+h2 {text-align: center;}
