@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "UTF-8" name = "viewport" content = "width=device-width, initial-scale = 1">
+	<title>Reservation</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "Style.css">
+
+
+</head>
+
+<body>
+
+	<header>
+		<div class = "header_container">
+			<img src = "logo2.png" alt = "logo" class = "logo">
+
+			<nav>
+				<ul>
+					
+					<li><a href = "Home.html">Home</a></li>
+					<li><a href = "Menu.html">Menu</a></li>
+					<li><a href = "reservation.html">Reserve</a></li>
+					<li><a href = "#">Order Takeout</a></li>
+					<li><a href = "Cung Chow final.html">New Coupon this Month</a></li>
+					<li><a href = "About Us.html">About us</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<div id = "bg_container">
+		<video id="bg" src="bgvideo.mp4" autoplay="true" loop="true" muted = "true">
+		</video>
+		<div class = "content_home" style = "text-align: left;">
+			
+			<h1>Make a Reservation</h1>
+			<form method = "post" action = "connect.php">
+				<p><label>Name:
+					<input type = "text" name = "name" type = "text" size = "25" maxlength = "30"required /></label></p>
+
+				<p><label>Date:
+					<input type = "date" name = "date" required/>
+				</label></p>
+
+				<p><label>Time: 
+					<input type = "time" name = "time" required/>
+				</label></p>
+
+				<p><label>Phone number: 
+					<input type = "tel" placeholder = "(###) ###-####"
+					pattern = "\(\d{3}\) +\d{3}-\d{4}" name = "phone" required />
+				</label></p>
+
+				<label for = "party_size">Party Size: </label>
+
+				<select id = "party_size" name = "party_size" type = "int">
+					<option value = "1">1</option>
+					<option value = "2">2</option>
+					<option value = "3">3</option>
+					<option value = "4">4</option>
+					<option value = "5">5</option>
+					<option value = "6">6</option>
+				</select>
+
+				<p><label>Email: 
+					<input type = "email" />
+				</label></p>
+				<p>
+					<input type = "submit" value = "Submit">
+			</form>
+
+
+
+
+
+
+
+			</div>
+	</div>
+
+
+
+</body>
+</html>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fL07XKsk2EE?start=14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
